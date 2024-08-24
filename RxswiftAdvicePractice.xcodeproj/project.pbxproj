@@ -23,7 +23,6 @@
 		FFBA1CC62C79950C008FE243 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1CC52C79950C008FE243 /* ViewModel.swift */; };
 		FFBA1CC82C799520008FE243 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1CC72C799520008FE243 /* View.swift */; };
 		FFBA1CCA2C799539008FE243 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1CC92C799539008FE243 /* APIServiceProtocol.swift */; };
-		FFBA1CD12C799812008FE243 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1CD02C799812008FE243 /* MockAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		FFBA1CC52C79950C008FE243 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FFBA1CC72C799520008FE243 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		FFBA1CC92C799539008FE243 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
-		FFBA1CD02C799812008FE243 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				FFBA1CC92C799539008FE243 /* APIServiceProtocol.swift */,
-				FFBA1CD02C799812008FE243 /* MockAPIService.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -465,7 +462,6 @@
 				FFBA1C9B2C799485008FE243 /* RxswiftAdvicePractice.xcdatamodeld in Sources */,
 				FFBA1CC42C7994F3008FE243 /* Advice.swift in Sources */,
 				FFBA1C912C799485008FE243 /* AppDelegate.swift in Sources */,
-				FFBA1CD12C799812008FE243 /* MockAPIService.swift in Sources */,
 				FFBA1CC62C79950C008FE243 /* ViewModel.swift in Sources */,
 				FFBA1CC82C799520008FE243 /* View.swift in Sources */,
 				FFBA1C932C799485008FE243 /* SceneDelegate.swift in Sources */,
