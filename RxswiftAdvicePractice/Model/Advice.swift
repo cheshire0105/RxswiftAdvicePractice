@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 struct Advice: Decodable {
     let author: String
     let authorProfile: String
