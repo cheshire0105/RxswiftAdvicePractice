@@ -10,6 +10,7 @@
 		07A295690EC72B11FF151E47 /* Pods_RxswiftAdvicePractice_RxswiftAdvicePracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A4A0C5011C342A30B7472B /* Pods_RxswiftAdvicePractice_RxswiftAdvicePracticeUITests.framework */; };
 		456E6F1F3CB0073B712313B7 /* Pods_RxswiftAdvicePracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31A221539B45CEC87E6BF8A /* Pods_RxswiftAdvicePracticeTests.framework */; };
 		BD99533352C20A313246368A /* Pods_RxswiftAdvicePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E5EADEF2691A874C0F3307 /* Pods_RxswiftAdvicePractice.framework */; };
+		FF0C3C642C82D6C700468E08 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C3C632C82D6C700468E08 /* MockAPIService.swift */; };
 		FF7CFAF42C79A9600029D13A /* LectureMaterial.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF7CFAF32C79A9600029D13A /* LectureMaterial.docc */; };
 		FFBA1C912C799485008FE243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1C902C799485008FE243 /* AppDelegate.swift */; };
 		FFBA1C932C799485008FE243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA1C922C799485008FE243 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		D4A4A0C5011C342A30B7472B /* Pods_RxswiftAdvicePractice_RxswiftAdvicePracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxswiftAdvicePractice_RxswiftAdvicePracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D643CBB7289318F8E8FD4707 /* Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests/Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F86DFFD8AE9FC2A39AAB33CE /* Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests/Pods-RxswiftAdvicePractice-RxswiftAdvicePracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF0C3C632C82D6C700468E08 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		FF7CFAF32C79A9600029D13A /* LectureMaterial.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LectureMaterial.docc; sourceTree = "<group>"; };
 		FFBA1C8D2C799485008FE243 /* RxswiftAdvicePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxswiftAdvicePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBA1C902C799485008FE243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBA1CC92C799539008FE243 /* APIServiceProtocol.swift */,
+				FF0C3C632C82D6C700468E08 /* MockAPIService.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				FF7CFAF42C79A9600029D13A /* LectureMaterial.docc in Sources */,
 				FFBA1C912C799485008FE243 /* AppDelegate.swift in Sources */,
 				FFBA1CC62C79950C008FE243 /* ViewModel.swift in Sources */,
+				FF0C3C642C82D6C700468E08 /* MockAPIService.swift in Sources */,
 				FFBA1CC82C799520008FE243 /* View.swift in Sources */,
 				FFBA1C932C799485008FE243 /* SceneDelegate.swift in Sources */,
 			);
