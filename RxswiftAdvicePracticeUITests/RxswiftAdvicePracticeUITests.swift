@@ -10,32 +10,37 @@ import XCTest
 final class RxswiftAdvicePracticeUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        app.launchArguments = ["-useMockAPI"]
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    func testFetchAdvice() throws {
+        let app = XCUIApplication()
+
+        // Fetch Advice 버튼이 있는지 확인
+        let fetchButton = app.buttons["Fetch Advice"]
+        XCTAssertTrue(fetchButton.exists, "Fetch Advice 버튼이 존재하지 않습니다.")
+
+        // Fetch Advice 버튼을 탭
+        fetchButton.tap()
+
+        // 로딩 인디케이터가 나타나는지 확인
+        let activityIndicator = app.activityIndicators["activityIndicator"]
+        XCTAssertTrue(activityIndicator.waitForExistence(timeout: 5), "로딩 인디케이터가 표시되지 않았습니다.")
+
+        // 목업 데이터가 화면에 표시될 때까지 대기
+        let messageLabel = app.staticTexts["Test Message"]
+        XCTAssertTrue(messageLabel.waitForExistence(timeout: 10), "명언이 표시되지 않았습니다.")
+
+        let authorLabel = app.staticTexts["Test Author"]
+        XCTAssertTrue(authorLabel.waitForExistence(timeout: 10), "작가 이름이 표시되지 않았습니다.")
+
+        let authorProfileLabel = app.staticTexts["Test Profile"]
+        XCTAssertTrue(authorProfileLabel.waitForExistence(timeout: 10), "작가 프로필이 표시되지 않았습니다.")
+
+        // 로딩 인디케이터가 사라졌는지 확인
+        XCTAssertFalse(activityIndicator.exists, "로딩 인디케이터가 여전히 표시되고 있습니다.")
     }
 }

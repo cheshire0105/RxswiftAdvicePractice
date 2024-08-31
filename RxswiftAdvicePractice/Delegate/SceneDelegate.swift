@@ -15,11 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // UIWindowScene이 전달되었는지 확인합니다.
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        // Mock API 사용 여부를 결정합니다.
+        let useMockAPI = ProcessInfo.processInfo.arguments.contains("-useMockAPI")
+        let apiService: APIServiceProtocol = useMockAPI ? MockAPIService() : APIService()
+
+        // ViewModel을 생성하고, ViewController에 주입합니다.
+        let adviceViewModel = AdviceViewModel(apiService: apiService)
+        let adviceViewController = AdviceViewController(viewModel: adviceViewModel)
+
         // UIWindow를 생성하고 윈도우 씬을 연결합니다.
         window = UIWindow(windowScene: windowScene)
-
-        // 루트 뷰 컨트롤러를 설정합니다.
-        let adviceViewController = AdviceViewController()
         window?.rootViewController = adviceViewController
 
         // 윈도우를 보이도록 설정합니다.

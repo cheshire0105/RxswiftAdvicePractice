@@ -62,8 +62,10 @@ class AdviceViewController: UIViewController {
         let indicator = UIActivityIndicatorView(style: .large)
         indicator.color = .gray
         indicator.hidesWhenStopped = true
+        indicator.accessibilityIdentifier = "activityIndicator"  // Identifier 설정
         return indicator
     }()
+
 
     // ViewModel and DisposeBag
     let viewModel: AdviceViewModel
