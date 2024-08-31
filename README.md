@@ -44,6 +44,10 @@
 ### UI 테스트
 `RxswiftAdvicePracticeUITests` 타겟을 선택한 후 `Cmd+U`를 눌러 UI 테스트를 실행할 수 있습니다.
 
+### LectureMaterial
+LectureMaterial 폴더 내부에 공부 자료가 정리 되어 있습니다. Build Documentation 후 내부의 Documentation을 참고바랍니다.
+
+
 이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
 ---
